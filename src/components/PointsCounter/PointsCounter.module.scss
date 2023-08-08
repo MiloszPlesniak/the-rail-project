@@ -1,0 +1,23 @@
+.pointsCounter {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    border: 1px grey solid;
+    padding: 2px;
+    &__correct {
+      color: white;
+      background-color: green;
+      border-color: white;
+    }
+    &__notCorrectly {
+      color: white;
+      background-color: red;
+      border-color: white;
+    }
+  }
+}

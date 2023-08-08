@@ -1,0 +1,25 @@
+.theory {
+  position: relative;
+  display: flex;
+
+  &__list {
+  position: fixed;
+    width: 15vw;
+    height: 100vh;
+    color: #606770;
+    padding: 0px 10px;
+    overflow: auto;
+    font-size: 20px;
+  }
+  &__menuItem {
+  }
+  &__link {
+    color: #606770;
+  }
+  &__materials {
+    position: relative;
+    top: 0px;
+    left: 16vw;
+    width: 80vw;
+  }
+}

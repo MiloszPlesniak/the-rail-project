@@ -1,0 +1,25 @@
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  background-color: #fff;
+  width: 95%;
+  margin: 0px auto;
+}
+
+ul,
+ol {
+  padding: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0px;
+}
