@@ -9,6 +9,10 @@
   &__item {
     border: 1px grey solid;
     padding: 2px;
+    &__icon {
+      width: 20px;
+      height: 29px;
+    }
     &__correct {
       color: white;
       background-color: green;
@@ -19,5 +23,11 @@
       background-color: red;
       border-color: white;
     }
+  }
+  &__icon {
+    width: 20px;
+    height: 27.5px;
+    border: 1px grey solid;
+    cursor: pointer;
   }
 }

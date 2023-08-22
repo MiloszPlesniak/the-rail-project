@@ -2,6 +2,7 @@ import { nanoid } from "nanoid";
 
 export const railwaySignals = [
   {
+    symbol:"S1",
     name: "Sygnał S1  „Stój”",
     code: [0, 1, 0, 0],
     descryption:
@@ -10,6 +11,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S2",
     name: "Sygnał S2  „Jazda z największą dozwoloną prędkością”",
     code: [2, 0, 0, 0],
     descryption:
@@ -18,6 +20,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S3",
     name: "Sygnał S3  „Jazda z największą dozwoloną prędkością  wprzodzie są dwa odstępy blokowe wolne  albo przynastępnym semaforze z prędkością nie większą niż 100 km/h”",
     code: [5, 0, 0, 0],
     descryption:
@@ -26,6 +29,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S4",
     name: "Sygnał S4  „Następny semafor wskazuje sygnał zezwalający na jazdę z prędkością zmniejszoną do 40 lub 60 km/h”",
     code: [6, 0, 0, 0],
     descryption:
@@ -34,6 +38,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S5",
     name: "Sygnał S5  „Następny semafor nadaje sygnał Stój",
     code: [3, 0, 0, 0],
     descryption:
@@ -42,6 +47,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S6",
     name: "Sygnał S6  Jazda z prędkością nieprzekraczającą 100 km/h - a potem z największą dozwoloną prędkością",
     code: [2, 0, 3, 2],
     descryption:
@@ -50,6 +56,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S7",
     name: "Sygnał S7  Jazda z prędkością nieprzekraczającą 100 km/h przy tym i następnym semaforze",
     code: [5, 0, 3, 2],
     descryption:
@@ -58,6 +65,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S8",
     name: "Sygnał S8  Jazda z prędkością nieprzekraczającą 100 km/h a przy następnym semaforze z prędkością zmniejszoną do 40 lub 60 km/h”",
     code: [6, 0, 3, 2],
     descryption:
@@ -66,6 +74,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S9",
     name: "Sygnał S9  Jazda z prędkością nieprzekraczającą 100 km/h,a przy następnym semaforze - Stój",
     code: [3, 0, 3, 2],
     descryption:
@@ -74,6 +83,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S10",
     name: "Sygnał S10 Jazda z prędkością nieprzekraczającą 40 km/h a potem z największą dozwoloną prędkością",
     code: [2, 0, 3, 0],
     descryption:
@@ -82,6 +92,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S10a",
     name: "Sygnał S10 a Jazda z prędkością nieprzekraczającą 60 km/h a potem z największą dozwoloną prędkością",
     code: [2, 0, 3, 3],
     descryption:
@@ -90,6 +101,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S11",
     name: "Sygnał S11 Jazda z prędkością nieprzekraczająca 40 km/h a przy następnym semaforze z prędkością nieprzekraczającą 100 km/h",
     code: [5, 0, 3, 0],
     descryption:
@@ -98,6 +110,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S11a",
     name: "Sygnał s11a Jazda z prędkością nieprzekraczającą 60 km/h, a przy następnym semaforze - z prędkością nieprzekraczającą 100km/h",
     code: [5, 0, 3, 3],
     descryption:
@@ -106,6 +119,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S12",
     name: "Sygnał S12 jazda z prędkością nieprzekraczającą 40 km/h, a przy następnym semaforze - z prędkością nieprzekraczającą 40 lub 60 km/h",
     code: [6, 0, 3, 0],
     descryption:
@@ -114,6 +128,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S12a",
     name: "Sygnał S12a Jazda z prędkością nieprzekraczającą 60 km/h, a przy następnym semaforze - z prędkością zmniejszoną do 40 lub 60km/h”",
     code: [6, 0, 3, 3],
     descryption:
@@ -122,6 +137,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S13",
     name: "Sygnał S13 Jazda z prędkością nieprzekraczającą 40 km/h, a przy następnym semaforze - Stój”",
     code: [3, 0, 3, 0],
     descryption:
@@ -130,6 +146,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"S13a",
     name: "Sygnał S13a Jazda z prędkością nieprzekraczającą 60 km/h, a przy następnym semaforze - Stój”:",
     code: [3, 0, 3, 3],
     descryption:
@@ -138,6 +155,7 @@ export const railwaySignals = [
     correct: null,
   },
   {
+    symbol:"Sz",
     name: "Sygnał zastępczy Sz „Można przejechać obok semafora wskazującego sygnał „Stój” albo sygnał wątpliwy, albo też semafora nieoświetlonego lub przejechać obok sygnalizatora sygnału zastępczego, mającego wyłącznie latarnię ze światłem białym - bez rozkazu pisemnego”",
     code: [1, 0, 4, 0],
     descryption:

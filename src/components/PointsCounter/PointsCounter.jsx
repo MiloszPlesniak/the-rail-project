@@ -1,13 +1,19 @@
-import { nanoid } from "nanoid";
-import clsx from "clsx";
-import style from "./PointsCounter.module.scss";
+import { nanoid } from 'nanoid';
+import { MdOutlineSkipNext, MdOutlineSkipPrevious } from 'react-icons/md';
+import clsx from 'clsx';
+import style from './PointsCounter.module.scss';
 
-const PointsCounter = ({ pointsTable = [] }) => {
+const PointsCounter = ({ pointsTable = [], prev, next }) => {
   return (
     <div className={style.pointsCounter}>
       <ul className={style.pointsCounter__list}>
-        {pointsTable.map((item) => {
-          console.log(item.correct);
+        <li className={style.pointsCounter__item__icon}>
+          <MdOutlineSkipPrevious
+            className={style.pointsCounter__icon}
+            onClick={prev}
+          />
+        </li>
+        {pointsTable.map(item => {
           return (
             <li
               key={nanoid()}
@@ -17,10 +23,16 @@ const PointsCounter = ({ pointsTable = [] }) => {
                   item.correct === false,
               })}
             >
-              {item.name.slice(7, 11)}
+              {item.symbol}
             </li>
           );
         })}
+        <li className={style.pointsCounter__item__icon}>
+          <MdOutlineSkipNext
+            className={style.pointsCounter__icon}
+            onClick={next}
+          />
+        </li>
       </ul>
     </div>
   );

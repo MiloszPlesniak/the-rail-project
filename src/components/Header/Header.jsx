@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import style from "./Header.module.scss";
+import { NavLink } from 'react-router-dom';
+import style from './Header.module.scss';
 const Header = () => {
   return (
     <header>
@@ -9,10 +9,10 @@ const Header = () => {
             <NavLink to="/">Strona głowna</NavLink>
           </li>
           <li className={style.navigation__item}>
-            <NavLink to="Teoria">Teoria</NavLink>
+            <NavLink to="Teoria/Semafory">Teoria</NavLink>
           </li>
           <li className={style.navigation__item}>
-            <NavLink to="Ćwiczenia">Ćwiczenia</NavLink>
+            <NavLink to="Ćwiczenia/Semafory">Ćwiczenia</NavLink>
           </li>
           <li className={style.navigation__item}>
             <NavLink to="Spis-treści">Spis Treści</NavLink>

@@ -27,6 +27,29 @@
     display: none;
   }
 }
+.menuShow {
+  left: 0px;
+}
 .show {
   display: block;
+}
+@media screen and (max-width: 800px) {
+  .menuItem {
+    position: absolute;
+    width: 160px;
+    padding-right: 15px;
+    // display: none;
+    background-color: white;
+    left: -200px;
+  }
+  .menuShowBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    // background-color: #fafafa;
+    border: 1px solid lightgray;
+    border-left: none;
+  }
 }

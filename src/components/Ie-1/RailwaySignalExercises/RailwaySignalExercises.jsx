@@ -1,9 +1,11 @@
-import { useState } from "react";
-import style from "./RailwaySignalExercises.module.scss";
-import RailwaySignal from "../RailwaySignal/RailwaySignal";
-import { railwaySignals } from "../../../suchData/railwaySignals";
-import Questions from "../Questions/Questions";
-import PointsCounter from "../../PointsCounter/PointsCounter";
+import { useState } from 'react';
+import { FiCheck } from 'react-icons/fi';
+import { BiShowAlt } from 'react-icons/bi';
+import style from './RailwaySignalExercises.module.scss';
+import RailwaySignal from '../RailwaySignal/RailwaySignal';
+import { railwaySignals } from '../../../suchData/railwaySignals';
+import Questions from '../Questions/Questions';
+import PointsCounter from '../../PointsCounter/PointsCounter';
 
 const RailwaySignalExercises = () => {
   const questionsData = railwaySignals;
@@ -11,7 +13,7 @@ const RailwaySignalExercises = () => {
   const [table, setTable] = useState([0, 0, 0, 0]);
   const [correctlyAnwers, setCorrectlyAnwers] = useState(questionsData);
   const [numOfQuestion, setNumOfQuestion] = useState(0);
-  const changeColor = (pos) => {
+  const changeColor = pos => {
     const index = pos - 1;
     let num = table[index];
     num++;
@@ -23,12 +25,12 @@ const RailwaySignalExercises = () => {
     setTable([...secTable]);
   };
 
-  const nextQuestion = (e) => {
+  const nextQuestion = e => {
     if (numOfQuestion < questionsData.length - 1) {
       setNumOfQuestion(numOfQuestion + 1);
     }
   };
-  const prevQuestion = (e) => {
+  const prevQuestion = e => {
     if (numOfQuestion > 0) {
       setNumOfQuestion(numOfQuestion - 1);
     }
@@ -64,37 +66,23 @@ const RailwaySignalExercises = () => {
           <Questions question={questionsData[numOfQuestion]} />
         </div>
         <div className={style.test__btn}>
-          <button
-            onClick={checkQuestion}
-            className={style.test__btn__check}
-            type="button"
-          >
-            Sprawdź
-          </button>
-          <button
+          <BiShowAlt
             onClick={showAnswer}
             className={style.test__btn__show}
-            type="button"
-          >
-            Pokaż
-          </button>
-          <button
-            onClick={prevQuestion}
-            className={style.test__btn__prev}
-            type="button"
-          >
-            Poprzednie
-          </button>
-          <button
-            className={style.test__btn__next}
-            onClick={nextQuestion}
-            type="button"
-          >
-            Następne
-          </button>
+            size={'2em'}
+          />
+          <FiCheck
+            onClick={checkQuestion}
+            className={style.test__btn__check}
+            size={'2em'}
+          />
         </div>
         <div className={style.test__pointerCounter}>
-          <PointsCounter pointsTable={correctlyAnwers} />
+          <PointsCounter
+            pointsTable={correctlyAnwers}
+            next={nextQuestion}
+            prev={prevQuestion}
+          />
         </div>
       </section>
     </>
