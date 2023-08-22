@@ -1,9 +1,9 @@
 // import { useState } from "react";
 
-import style from "./RailwaySignal.module.scss";
-import clsx from "clsx";
+import style from './RailwaySignal.module.scss';
+import clsx from 'clsx';
 
-const RailwaySignal = ({ table, onClick = ()=>{} }) => {
+const RailwaySignal = ({ table, onClick = () => {} }) => {
   const lights = {
     red: clsx(style.red),
     green: clsx(style.green),
@@ -13,9 +13,9 @@ const RailwaySignal = ({ table, onClick = ()=>{} }) => {
     fleshOrange: clsx(style.flashing, style.orange),
   };
   const { green, red, white, orange, fleshGreen, fleshOrange } = lights;
-
+  
   return (
-    <div className={style.railwaySignalitem}>
+    <div>
       <div className={style.railwaySignal}>
         <div className={style.railwaySignal__cover}>
           <div className={style.railwaySignal__signaling}>

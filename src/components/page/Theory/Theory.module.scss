@@ -3,16 +3,15 @@
   display: flex;
 
   &__list {
-  position: fixed;
+    position: fixed;
     width: 15vw;
     height: 100vh;
     color: #606770;
     padding: 0px 10px;
-    overflow: auto;
+    // overflow: auto;
     font-size: 20px;
   }
-  &__menuItem {
-  }
+
   &__link {
     color: #606770;
   }
@@ -21,5 +20,24 @@
     top: 0px;
     left: 16vw;
     width: 80vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .theory {
+    display: flex;
+    &__list {
+      overflow: visible;
+      // display: none;
+      // width: 180px;
+      padding: 0px, 15px, 0px, 0px;
+      z-index: 5;
+      // background-color: white;
+
+    }
+    &__materials {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
   }
 }

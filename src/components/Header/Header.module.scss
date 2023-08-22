@@ -5,14 +5,31 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px #d5d4d4 solid;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
+
   &__list {
     display: flex;
-    // justify-content: space-between;
     align-items: center;
     gap: 50px;
   }
   &__item {
     font-size: 20px;
+  }
+}
+.menuBurger {
+  position: absolute;
+  left: 10px;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .navigation {
+    height: 30px;
+    &__list {
+      gap: 20px;
+    }
+    &__item {
+      font-size: 12px;
+    }
   }
 }
