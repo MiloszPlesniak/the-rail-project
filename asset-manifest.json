@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/the-rail-project/static/css/main.ab6796ef.css",
-    "main.js": "/the-rail-project/static/js/main.79156171.js",
+    "main.css": "/the-rail-project/static/css/main.98673b24.css",
+    "main.js": "/the-rail-project/static/js/main.0240ecc5.js",
     "index.html": "/the-rail-project/index.html",
-    "main.ab6796ef.css.map": "/the-rail-project/static/css/main.ab6796ef.css.map",
-    "main.79156171.js.map": "/the-rail-project/static/js/main.79156171.js.map"
+    "main.98673b24.css.map": "/the-rail-project/static/css/main.98673b24.css.map",
+    "main.0240ecc5.js.map": "/the-rail-project/static/js/main.0240ecc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab6796ef.css",
-    "static/js/main.79156171.js"
+    "static/css/main.98673b24.css",
+    "static/js/main.0240ecc5.js"
   ]
 }
